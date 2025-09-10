@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Museum Ticket Booking</h1>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Tickets</h2>
+            <form id="ticketForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="tickets">Slot Timing</label>
+                <input type="time" id="tickets" name="tickets" min="1" required>
+
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" required>
+                 p>Select Payment:</p>
+    <label><input type="Museum" name="payment" value="UPI" required> UPI</label>
+    <label><input type="Museum" name="payment" value="Card"> Card</label>
+    <label><input type="Museum" name="payment" value="Net Banking"> Net Banking</label>
+
+    <button type="submit">Submit</button>
+</form>
+
+<div id="confirmationMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Museum Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
